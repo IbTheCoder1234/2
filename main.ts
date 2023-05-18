@@ -1,10 +1,85 @@
 input.onButtonPressed(Button.A, function () {
     idx += -1
 })
+input.onButtonPressed(Button.AB, function () {
+    if (idx == 1) {
+        msg = "" + msg + "A"
+    } else if (idx == 2) {
+        msg = "" + msg + "B"
+        basic.showString("B")
+    } else if (idx == 3) {
+        msg = "" + msg + "C"
+        basic.showString("C")
+    } else if (idx == 4) {
+        msg = "" + msg + "D"
+        basic.showString("D")
+    } else if (idx == 5) {
+        msg = "" + msg + "F"
+        basic.showString("E")
+    } else if (idx == 6) {
+        msg = "" + msg + "F"
+        basic.showString("F")
+    } else if (idx == 7) {
+        msg = "" + msg + "F"
+        basic.showString("G")
+    } else if (idx == 8) {
+        msg = "" + msg + "F"
+        basic.showString("H")
+    } else if (idx == 9) {
+        msg = "" + msg + "F"
+        basic.showString("I")
+    } else if (idx == 10) {
+        msg = "" + msg + "F"
+        basic.showString("J")
+    } else if (idx == 11) {
+        msg = "" + msg + "F"
+        basic.showString("K")
+    } else if (idx == 12) {
+        msg = "" + msg + "F"
+        basic.showString("L")
+    } else if (idx == 13) {
+        msg = "" + msg + "F"
+        basic.showString("M")
+    } else if (idx == 14) {
+        msg = "" + msg + "F"
+        basic.showString("N")
+    } else if (idx == 15) {
+        msg = "" + msg + "F"
+        basic.showString("O")
+    } else if (idx == 16) {
+        basic.showString("P")
+    } else if (idx == 17) {
+        basic.showString("Q")
+    } else if (idx == 18) {
+        basic.showString("R")
+    } else if (idx == 19) {
+        basic.showString("S")
+    } else if (idx == 20) {
+        basic.showString("T")
+    } else if (idx == 21) {
+        basic.showString("U")
+    } else if (idx == 22) {
+        basic.showString("V")
+    } else if (idx == 23) {
+        basic.showString("W")
+    } else if (idx == 24) {
+        basic.showString("X")
+    } else if (idx == 25) {
+        basic.showString("Y")
+    } else if (idx == 26) {
+        basic.showString("Z")
+    } else if (idx < 1) {
+        idx = 26
+    } else {
+        idx = 1
+    }
+})
 input.onButtonPressed(Button.B, function () {
     idx += 1
 })
-let idx = 1
+let msg = ""
+let idx = 0
+idx = 1
 basic.forever(function () {
     if (idx == 1) {
         basic.showString("A")
