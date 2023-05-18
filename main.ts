@@ -4,74 +4,82 @@ input.onButtonPressed(Button.A, function () {
 input.onButtonPressed(Button.AB, function () {
     if (idx == 1) {
         msg = "" + msg + "A"
+        basic.showIcon(IconNames.Yes)
     } else if (idx == 2) {
         msg = "" + msg + "B"
-        basic.showString("B")
+        basic.showIcon(IconNames.Yes)
     } else if (idx == 3) {
         msg = "" + msg + "C"
-        basic.showString("C")
+        basic.showIcon(IconNames.Yes)
     } else if (idx == 4) {
         msg = "" + msg + "D"
-        basic.showString("D")
+        basic.showIcon(IconNames.Yes)
     } else if (idx == 5) {
-        msg = "" + msg + "F"
-        basic.showString("E")
+        msg = "" + msg + "E"
+        basic.showIcon(IconNames.Yes)
     } else if (idx == 6) {
         msg = "" + msg + "F"
-        basic.showString("F")
+        basic.showIcon(IconNames.Yes)
     } else if (idx == 7) {
-        msg = "" + msg + "F"
-        basic.showString("G")
+        msg = "" + msg + "G"
+        basic.showIcon(IconNames.Yes)
     } else if (idx == 8) {
-        msg = "" + msg + "F"
-        basic.showString("H")
+        msg = "" + msg + "H"
+        basic.showIcon(IconNames.Yes)
     } else if (idx == 9) {
-        msg = "" + msg + "F"
-        basic.showString("I")
+        msg = "" + msg + "I"
+        basic.showIcon(IconNames.Yes)
     } else if (idx == 10) {
-        msg = "" + msg + "F"
-        basic.showString("J")
+        msg = "" + msg + "G"
+        basic.showIcon(IconNames.Yes)
     } else if (idx == 11) {
-        msg = "" + msg + "F"
-        basic.showString("K")
+        msg = "" + msg + "K"
+        basic.showIcon(IconNames.Yes)
     } else if (idx == 12) {
-        msg = "" + msg + "F"
-        basic.showString("L")
+        msg = "" + msg + "L"
+        basic.showIcon(IconNames.Yes)
     } else if (idx == 13) {
-        msg = "" + msg + "F"
-        basic.showString("M")
+        msg = "" + msg + "M"
+        basic.showIcon(IconNames.Yes)
     } else if (idx == 14) {
-        msg = "" + msg + "F"
-        basic.showString("N")
+        msg = "" + msg + "N"
+        basic.showIcon(IconNames.Yes)
     } else if (idx == 15) {
-        msg = "" + msg + "F"
-        basic.showString("O")
+        msg = "" + msg + "O"
+        basic.showIcon(IconNames.Yes)
     } else if (idx == 16) {
-        basic.showString("P")
+        msg = "" + msg + "P"
+        basic.showIcon(IconNames.Yes)
     } else if (idx == 17) {
-        basic.showString("Q")
+        msg = "" + msg + "Q"
+        basic.showIcon(IconNames.Yes)
     } else if (idx == 18) {
-        basic.showString("R")
+        msg = "" + msg + "R"
+        basic.showIcon(IconNames.Yes)
     } else if (idx == 19) {
-        basic.showString("S")
+        msg = "" + msg + "S"
+        basic.showIcon(IconNames.Yes)
     } else if (idx == 20) {
-        basic.showString("T")
+        msg = "" + msg + "T"
+        basic.showIcon(IconNames.Yes)
     } else if (idx == 21) {
-        basic.showString("U")
+        msg = "" + msg + "U"
+        basic.showIcon(IconNames.Yes)
     } else if (idx == 22) {
-        basic.showString("V")
+        msg = "" + msg + "V"
+        basic.showIcon(IconNames.Yes)
     } else if (idx == 23) {
-        basic.showString("W")
+        msg = "" + msg + "W"
+        basic.showIcon(IconNames.Yes)
     } else if (idx == 24) {
-        basic.showString("X")
+        msg = "" + msg + "X"
+        basic.showIcon(IconNames.Yes)
     } else if (idx == 25) {
-        basic.showString("Y")
+        msg = "" + msg + "Y"
+        basic.showIcon(IconNames.Yes)
     } else if (idx == 26) {
-        basic.showString("Z")
-    } else if (idx < 1) {
-        idx = 26
-    } else {
-        idx = 1
+        msg = "" + msg + "Z"
+        basic.showIcon(IconNames.Yes)
     }
 })
 input.onButtonPressed(Button.B, function () {
