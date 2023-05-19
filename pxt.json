@@ -5,7 +5,9 @@
         "core": "*",
         "radio": "*",
         "microphone": "*",
-        "radio-broadcast": "*"
+        "radio-broadcast": "*",
+        "servo": "*",
+        "linebeacon": "github:pizayanz/pxt-linebeacon#v0.0.14"
     },
     "files": [
         "main.blocks",

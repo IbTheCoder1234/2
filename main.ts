@@ -1,3 +1,7 @@
+enum RadioMessage {
+    message1 = 49434,
+    msg = 2648
+}
 input.onButtonPressed(Button.A, function () {
     idx += -1
 })
@@ -5,89 +9,123 @@ input.onButtonPressed(Button.AB, function () {
     if (idx == 1) {
         msg = "" + msg + "A"
         basic.showIcon(IconNames.Yes)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
     } else if (idx == 2) {
         msg = "" + msg + "B"
         basic.showIcon(IconNames.Yes)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
     } else if (idx == 3) {
         msg = "" + msg + "C"
         basic.showIcon(IconNames.Yes)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
     } else if (idx == 4) {
         msg = "" + msg + "D"
         basic.showIcon(IconNames.Yes)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
     } else if (idx == 5) {
         msg = "" + msg + "E"
         basic.showIcon(IconNames.Yes)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
     } else if (idx == 6) {
         msg = "" + msg + "F"
         basic.showIcon(IconNames.Yes)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
     } else if (idx == 7) {
         msg = "" + msg + "G"
         basic.showIcon(IconNames.Yes)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
     } else if (idx == 8) {
         msg = "" + msg + "H"
         basic.showIcon(IconNames.Yes)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
     } else if (idx == 9) {
         msg = "" + msg + "I"
         basic.showIcon(IconNames.Yes)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
     } else if (idx == 10) {
         msg = "" + msg + "G"
         basic.showIcon(IconNames.Yes)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
     } else if (idx == 11) {
         msg = "" + msg + "K"
         basic.showIcon(IconNames.Yes)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
     } else if (idx == 12) {
         msg = "" + msg + "L"
         basic.showIcon(IconNames.Yes)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
     } else if (idx == 13) {
         msg = "" + msg + "M"
         basic.showIcon(IconNames.Yes)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
     } else if (idx == 14) {
         msg = "" + msg + "N"
         basic.showIcon(IconNames.Yes)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
     } else if (idx == 15) {
         msg = "" + msg + "O"
         basic.showIcon(IconNames.Yes)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
     } else if (idx == 16) {
         msg = "" + msg + "P"
         basic.showIcon(IconNames.Yes)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
     } else if (idx == 17) {
         msg = "" + msg + "Q"
         basic.showIcon(IconNames.Yes)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
     } else if (idx == 18) {
         msg = "" + msg + "R"
         basic.showIcon(IconNames.Yes)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
     } else if (idx == 19) {
         msg = "" + msg + "S"
         basic.showIcon(IconNames.Yes)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
     } else if (idx == 20) {
         msg = "" + msg + "T"
         basic.showIcon(IconNames.Yes)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
     } else if (idx == 21) {
         msg = "" + msg + "U"
         basic.showIcon(IconNames.Yes)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
     } else if (idx == 22) {
         msg = "" + msg + "V"
         basic.showIcon(IconNames.Yes)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
     } else if (idx == 23) {
         msg = "" + msg + "W"
         basic.showIcon(IconNames.Yes)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
     } else if (idx == 24) {
         msg = "" + msg + "X"
         basic.showIcon(IconNames.Yes)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
     } else if (idx == 25) {
         msg = "" + msg + "Y"
         basic.showIcon(IconNames.Yes)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
     } else if (idx == 26) {
         msg = "" + msg + "Z"
         basic.showIcon(IconNames.Yes)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
     }
+})
+radio.onReceivedString(function (receivedString) {
+    basic.showString(receivedString)
 })
 input.onButtonPressed(Button.B, function () {
     idx += 1
 })
+input.onLogoEvent(TouchButtonEvent.Pressed, function () {
+    radio.sendString(msg)
+    basic.showString("Msg sent!")
+})
 let msg = ""
 let idx = 0
 idx = 1
+radio.setGroup(69)
 basic.forever(function () {
     if (idx == 1) {
         basic.showString("A")
