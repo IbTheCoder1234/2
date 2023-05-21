@@ -2,8 +2,14 @@ enum RadioMessage {
     message1 = 49434,
     msg = 2648
 }
+buttonClicks.onButtonDoubleClicked(buttonClicks.AorB.A, function () {
+    idx = idx_record + 2
+    msg = msg.substr(0, msg.length - 1)
+    music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 5000, 1, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
+})
 input.onButtonPressed(Button.A, function () {
     idx += -1
+    idx_record = idx
 })
 input.onButtonPressed(Button.AB, function () {
     if (idx == 1) {
@@ -117,13 +123,22 @@ radio.onReceivedString(function (receivedString) {
 })
 input.onButtonPressed(Button.B, function () {
     idx += 1
+    idx_record = idx
+})
+buttonClicks.onButtonDoubleClicked(buttonClicks.AorB.B, function () {
+    idx = idx_record - 2
+    msg = "" + msg + " "
+    basic.showIcon(IconNames.Yes)
+    music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     radio.sendString(msg)
-    basic.showString("Msg sent!")
+    basic.showString("SENT!")
 })
 let msg = ""
 let idx = 0
+let idx_record = 0
+idx_record = 0
 idx = 1
 radio.setGroup(69)
 basic.forever(function () {
