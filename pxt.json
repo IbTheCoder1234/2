@@ -7,8 +7,8 @@
         "microphone": "*",
         "radio-broadcast": "*",
         "servo": "*",
-        "linebeacon": "github:pizayanz/pxt-linebeacon#v0.0.14",
-        "microbit-pxt-clicks": "github:bsiever/microbit-pxt-clicks#v0.2.2"
+        "microbit-pxt-clicks": "github:bsiever/microbit-pxt-clicks#v0.2.2",
+        "audio-recording": "*"
     },
     "files": [
         "main.blocks",
@@ -20,11 +20,22 @@
         "test.ts"
     ],
     "targetVersions": {
-        "target": "5.0.12",
+        "target": "6.0.18",
         "targetId": "microbit"
     },
     "supportedTargets": [
         "microbit"
     ],
-    "preferredEditor": "blocksprj"
+    "preferredEditor": "blocksprj",
+    "yotta": {
+        "config": {
+            "microbit-dal": {
+                "bluetooth": {
+                    "open": 0,
+                    "whitelist": 1,
+                    "security_level": "SECURITY_MODE_ENCRYPTION_NO_MITM"
+                }
+            }
+        }
+    }
 }

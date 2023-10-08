@@ -1,17 +1,18 @@
 enum RadioMessage {
-    message1 = 49434,
-    msg = 2648
+    msg = 2648,
+    message1 = 49434
 }
-buttonClicks.onButtonDoubleClicked(buttonClicks.AorB.A, function () {
-    idx = idx_record + 2
-    msg = msg.substr(0, msg.length - 1)
-    music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 5000, 1, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
-})
 input.onButtonPressed(Button.A, function () {
     idx += -1
     idx_record = idx
 })
+buttonClicks.onButtonHeld(buttonClicks.AorB.B, function () {
+    msg = "" + msg + " "
+    basic.showIcon(IconNames.Yes)
+    music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
+})
 input.onButtonPressed(Button.AB, function () {
+    let idxstart = 0
     if (idx == 1) {
         msg = "" + msg + "A"
         basic.showIcon(IconNames.Yes)
@@ -116,31 +117,127 @@ input.onButtonPressed(Button.AB, function () {
         msg = "" + msg + "Z"
         basic.showIcon(IconNames.Yes)
         music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
+    } else if (idx == 27) {
+        msg = "" + msg + "1"
+        basic.showIcon(IconNames.Yes)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
+    } else if (idx == 28) {
+        msg = "" + msg + "2"
+        basic.showIcon(IconNames.Yes)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
+    } else if (idx == 29) {
+        msg = "" + msg + "3"
+        basic.showIcon(IconNames.Yes)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
+    } else if (idx == 30) {
+        msg = "" + msg + "4"
+        basic.showIcon(IconNames.Yes)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
+    } else if (idx == 31) {
+        msg = "" + msg + "5"
+        basic.showIcon(IconNames.Yes)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
+    } else if (idx == 32) {
+        msg = "" + msg + "6"
+        basic.showIcon(IconNames.Yes)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
+    } else if (idx == 33) {
+        msg = "" + msg + "7"
+        basic.showIcon(IconNames.Yes)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
+    } else if (idx == 34) {
+        msg = "" + msg + "8"
+        basic.showIcon(IconNames.Yes)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
+    } else if (idx == 35) {
+        msg = "" + msg + "9"
+        basic.showIcon(IconNames.Yes)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
+    } else if (idx == 36) {
+        msg = "" + msg + "0"
+        basic.showIcon(IconNames.Yes)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
+    } else if (idxstart == 1) {
+        radio2 = "" + radio2 + "1"
+        basic.showIcon(IconNames.Yes)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
+    } else if (idxstart == 2) {
+        radio2 = "" + radio2 + "2"
+        basic.showIcon(IconNames.Yes)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
+    } else if (idxstart == 3) {
+        radio2 = "" + radio2 + "3"
+        basic.showIcon(IconNames.Yes)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
+    } else if (idxstart == 4) {
+        radio2 = "" + radio2 + "4"
+        basic.showIcon(IconNames.Yes)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
+    } else if (idxstart == 5) {
+        radio2 = "" + radio2 + "5"
+        basic.showIcon(IconNames.Yes)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
+    } else if (idxstart == 6) {
+        radio2 = "" + radio2 + "6"
+        basic.showIcon(IconNames.Yes)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
+    } else if (idxstart == 7) {
+        radio2 = "" + radio2 + "7"
+        basic.showIcon(IconNames.Yes)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
+    } else if (idxstart == 8) {
+        radio2 = "" + radio2 + "8"
+        basic.showIcon(IconNames.Yes)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
+    } else if (idxstart == 9) {
+        radio2 = "" + radio2 + "9"
+        basic.showIcon(IconNames.Yes)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
+    } else if (idxstart == 10) {
+        radio2 = "" + radio2 + "0"
+        basic.showIcon(IconNames.Yes)
+        music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
     }
 })
 radio.onReceivedString(function (receivedString) {
+    basic.clearScreen()
+    basic.pause(200)
     basic.showString(receivedString)
+    basic.pause(200)
 })
 input.onButtonPressed(Button.B, function () {
     idx += 1
     idx_record = idx
-})
-buttonClicks.onButtonDoubleClicked(buttonClicks.AorB.B, function () {
-    idx = idx_record - 2
-    msg = "" + msg + " "
-    basic.showIcon(IconNames.Yes)
-    music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 1693, 5000, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
+    if (connected == 0) {
+        if (idx < 27) {
+            idx = 27
+        }
+        if (idx == 1) {
+            idx = 27
+        }
+    }
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
-    radio.sendString(msg)
-    basic.showString("SENT!")
+    if (!(msg == "")) {
+        radio.sendString(msg)
+        basic.clearScreen()
+        basic.showString("SENT!")
+        msg = ""
+    }
+})
+buttonClicks.onButtonHeld(buttonClicks.AorB.A, function () {
+    msg = msg.substr(0, msg.length - 1)
+    music.playSoundEffect(music.createSoundEffect(WaveShape.Triangle, 5000, 1, 169, 169, 148, SoundExpressionEffect.Warble, InterpolationCurve.Linear), SoundExpressionPlayMode.UntilDone)
 })
 let msg = ""
+let connected = 0
+let radio2 = ""
 let idx = 0
 let idx_record = 0
 idx_record = 0
-idx = 1
-radio.setGroup(69)
+idx = 27
+radio2 = "0"
+connected = 0
 basic.forever(function () {
     if (idx == 1) {
         basic.showString("A")
@@ -194,9 +291,33 @@ basic.forever(function () {
         basic.showString("Y")
     } else if (idx == 26) {
         basic.showString("Z")
+    } else if (idx == 27) {
+        basic.showString("1")
+    } else if (idx == 28) {
+        basic.showString("2")
+    } else if (idx == 29) {
+        basic.showString("3")
+    } else if (idx == 30) {
+        basic.showString("4")
+    } else if (idx == 31) {
+        basic.showString("5")
+    } else if (idx == 32) {
+        basic.showString("6")
+    } else if (idx == 33) {
+        basic.showString("7")
+    } else if (idx == 34) {
+        basic.showString("8")
+    } else if (idx == 35) {
+        basic.showString("9")
+    } else if (idx == 36) {
+        basic.showString("0")
     } else if (idx < 1) {
-        idx = 26
+        if (connected == 1) {
+            idx = 36
+        }
     } else {
-        idx = 1
+        if (connected == 1) {
+            idx = 1
+        }
     }
 })
